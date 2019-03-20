@@ -55,7 +55,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainWindow.xaml">
+    <Compile Include="Item.cs" />
+    <Compile Include="ItemList.cs" />
+    <Compile Include="ItemReader.cs" />
+    <Compile Include="Text Editor.xaml.cs">
+      <DependentUpon>Text Editor.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Data.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Editor Mode.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Start Page.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -63,10 +77,20 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="Data.xaml.cs">
+      <DependentUpon>Data.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Editor Mode.xaml.cs">
+      <DependentUpon>Editor Mode.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Start Page.xaml.cs">
+      <DependentUpon>Start Page.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Text Editor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

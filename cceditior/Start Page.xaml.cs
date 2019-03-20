@@ -24,5 +24,17 @@ namespace cceditior
         {
             InitializeComponent();
         }
+
+        private void New_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Data openData = new Data();
+            openData.Show();
+            this.Close();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
