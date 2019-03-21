@@ -56,6 +56,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DataList.cs" />
+    <Compile Include="Image Editor.xaml.cs">
+      <DependentUpon>Image Editor.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Item.cs" />
     <Compile Include="ItemList.cs" />
     <Compile Include="ItemReader.cs" />
@@ -67,6 +71,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Editor Mode.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Image Editor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -118,6 +126,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\test1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\test2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

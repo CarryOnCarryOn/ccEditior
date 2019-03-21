@@ -20,7 +20,7 @@ namespace cceditior
     /// </summary>
     public partial class Text_Editor : Window
     {
-        Data dataWindow = new Data();
+        Data sdn = new Data();
         public Text_Editor()
         {
             InitializeComponent();
@@ -35,11 +35,12 @@ namespace cceditior
 
         public void Save_Click(object sender, RoutedEventArgs e)
         { 
-            Data sdn = new Data(nameOftitle.Text);
+            sdn.ChangeTitleName(nameOftitle.Text);
             sdn.Show();
+            this.Close();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        public void Button_Click(object sender, RoutedEventArgs e)
         {
 
             
@@ -66,10 +67,10 @@ namespace cceditior
 
 
 
-                Thickness margin = dataWindow.ItemNameStackPanel.Margin;
+                Thickness margin = sdn.ItemNameStackPanel.Margin;
                 margin.Top = 10;
-                dataWindow.ItemNameStackPanel.Children.Add(checkBox);
-                dataWindow.ItemDataStackPanel.Children.Add(label);
+                sdn.ItemNameStackPanel.Children.Add(checkBox);
+                sdn.ItemDataStackPanel.Children.Add(label);
                 //Todo:ADD THE ITEM to somewhere
             }
         }

@@ -10,34 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace cceditior
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Image_Editor.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Image_Editor : Window
     {
-        
-        public MainWindow()
+        public Image_Editor()
         {
             InitializeComponent();
-        }
-
-        
-      public void New_Button_Click(object sender, RoutedEventArgs e)
-        {
-
-            Data openData = new Data();
-            openData.Show();
-            this.Close();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

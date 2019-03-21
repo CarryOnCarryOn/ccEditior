@@ -15,9 +15,8 @@
         <Label x:Name="Tips" Content="Tips:&#10;&#10;Text Editor Mode can add item data and editing&#10; information that you want to use for character.&#10;&#10;Image Editor Mode can import image to edit&#10; appearance of Character." HorizontalAlignment="Left" Margin="43,73,0,0" VerticalAlignment="Top" Height="125" Width="315"/>
 
         <Button x:Name="TextEditor" Content="Text Editor" HorizontalAlignment="Left" Margin="35,105,0,0" VerticalAlignment="Top" Width="160" Height="50" Click="TextEditor_Click" Visibility="Collapsed"/>
-        <Button x:Name="AddCharacterImage" Content="Add Character Image" HorizontalAlignment="Left" Margin="35,105,0,0" VerticalAlignment="Top" Width="160" Height="50" Visibility="Collapsed"/>
-        <Button x:Name="AddBackgroundImage" Content="Add Background Image" HorizontalAlignment="Left" Margin="215,105,0,0" VerticalAlignment="Top" Width="160" Height="50" Visibility="Collapsed"/>
-
+        <Button x:Name="AddCharacterImage" Content="Add Character Image" HorizontalAlignment="Left" Margin="198,105,0,0" VerticalAlignment="Top" Width="160" Height="50" Visibility="Collapsed" Click="AddCharacterImage_Click"/>
+        
         <Button x:Name="ShowTips" Content="Show Tips" HorizontalAlignment="Left" Margin="43,198,0,0" VerticalAlignment="Top" Width="75" Click="ShowTips_Click"/>
 
     </Grid>

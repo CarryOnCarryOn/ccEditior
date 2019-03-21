@@ -20,11 +20,15 @@
 
         <Button Content="Editor" HorizontalAlignment="Left" Margin="45,327,0,0" VerticalAlignment="Top" Width="75" Click="EditorButton_Click" Grid.Row="2" Height="20"/>
         <Button Content="Previous" HorizontalAlignment="Left" Margin="0,327,0,0" VerticalAlignment="Top" Width="74" Click="PreviousButton_Click" Grid.Row="2" Grid.Column="1" Height="20"/>
-        <Button Content="Next Page" HorizontalAlignment="Left" Margin="136,327,0,0" VerticalAlignment="Top" Width="76" Grid.Row="2" Grid.Column="1" Height="20"/>
+        <Button Content="Next Page" HorizontalAlignment="Left" Margin="136,327,0,0" VerticalAlignment="Top" Width="76" Grid.Row="2" Grid.Column="1" Height="20" Click="Button_Click"/>
         <Label Content="Item name" HorizontalAlignment="Left" Margin="82,20,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="-0.156,-0.161" Height="26" Width="66"/>
         <Label Content="Item data" Grid.Column="1" HorizontalAlignment="Left" Margin="111,20,0,0" Grid.Row="1" VerticalAlignment="Top" Height="26" Width="61"/>
         <Image x:Name="Icon" Grid.Column="1" HorizontalAlignment="Left" Height="38" Margin="72,10,0,0" VerticalAlignment="Top" Width="100"/>
-        <StackPanel x:Name="ItemNameStackPanel" HorizontalAlignment="Left" Height="327" Grid.Row="2" VerticalAlignment="Top" Width="246"/>
+        <StackPanel x:Name="ItemNameStackPanel" HorizontalAlignment="Left" Height="327" Grid.Row="2" VerticalAlignment="Top" Width="246">
+            <StackPanel.Background>
+                <ImageBrush/>
+            </StackPanel.Background>
+        </StackPanel>
         <StackPanel x:Name="ItemDataStackPanel" Grid.Column="1" HorizontalAlignment="Left" Height="327" Margin="0,0,-5,0" Grid.Row="2" VerticalAlignment="Top" Width="251"/>
 
     </Grid>

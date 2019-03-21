@@ -30,7 +30,7 @@ namespace cceditior
             TextEditor.Visibility = Visibility.Visible;
             //collapse buttons
             AddCharacterImage.Visibility = Visibility.Collapsed;
-            AddBackgroundImage.Visibility = Visibility.Collapsed;
+        
             Tips.Visibility = Visibility.Collapsed;
         }
 
@@ -38,7 +38,7 @@ namespace cceditior
         {
             //show button
             AddCharacterImage.Visibility = Visibility.Visible;
-            AddBackgroundImage.Visibility = Visibility.Visible;
+           
             //collapse buttons
             TextEditor.Visibility = Visibility.Collapsed;
             Tips.Visibility = Visibility.Collapsed;
@@ -54,7 +54,7 @@ namespace cceditior
             //collapse buttons
             TextEditor.Visibility = Visibility.Collapsed;
             AddCharacterImage.Visibility = Visibility.Collapsed;
-            AddBackgroundImage.Visibility = Visibility.Collapsed;
+            
         }
 
         private void TextEditor_Click(object sender, RoutedEventArgs e)
@@ -63,6 +63,11 @@ namespace cceditior
             Text_Editor openTextEditor = new Text_Editor();
             openTextEditor.Show();
             this.Close();
+        }
+
+        private void AddCharacterImage_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

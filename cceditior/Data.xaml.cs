@@ -14,11 +14,14 @@ using System.Windows.Shapes;
 
 namespace cceditior
 {
+    
     /// <summary>
     /// Interaction logic for Data.xaml
     /// </summary>
     public partial class Data : Window
     {
+        public static List<Data> mydata = new List<Data>();
+
         public Data()
         {
             InitializeComponent();
@@ -28,6 +31,7 @@ namespace cceditior
         {
             Editor_Mode openEditorMode = new Editor_Mode();
             openEditorMode.Show();
+            this.Close();
         }
 
         private void PreviousButton_Click(object sender, RoutedEventArgs e)
@@ -37,11 +41,17 @@ namespace cceditior
             this.Close();
         }
 
-        public Data(string strTextBox)
+        public void ChangeTitleName(string name)
         {
-            InitializeComponent();
-            TitleName.Content = strTextBox;
+            TitleName.Content = name;
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            mydata.Add(this);
+            Data openData = new Data();
+            openData.Show();
+            this.Close();
+        }
     }
 }
