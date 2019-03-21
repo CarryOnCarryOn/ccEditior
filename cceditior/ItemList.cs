@@ -7,16 +7,16 @@ using System.Xml.Serialization;
 
 namespace cceditior
 {
- 
-        public class ItemList
+    [XmlRoot("ItemList")]
+    public class ItemList
         {
             [XmlArray("Items")]
             [XmlArrayItem("Item")]
-            public List<Item> items { get; set; }
+            public List<Item> Items { get; set; }
 
             public ItemList()
             {
-                items = new List<Item>();
+                Items = new List<Item>();
             }
         }
 }

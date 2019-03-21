@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ItemList>
 <Items>
   <Item>
   <Name>sword</Name>
   <UnlockRequirement>1</UnlockRequirement>
-  <Description>Iron sword</Description>
-    <image>
-      <!--path of image-->
-    </image>
-  <Effect></Effect>
+  <Description>Ironsword</Description>
+  <Effect>none</Effect>
   </Item>
 </Items>
+</ItemList>

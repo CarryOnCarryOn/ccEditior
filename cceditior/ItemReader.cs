@@ -14,7 +14,7 @@ namespace cceditior
         XmlSerializer itemserializer;
         public ItemReader()
         {
-            itemserializer = new XmlSerializer(typeof(Item));
+            itemserializer = new XmlSerializer(typeof(ItemList));
         }
         public ItemList Load(string filepath)
         {

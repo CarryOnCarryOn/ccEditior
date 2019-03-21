@@ -7,6 +7,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
+using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
@@ -19,6 +20,7 @@ namespace cceditior
     /// </summary>
     public partial class Text_Editor : Window
     {
+        Data dataWindow = new Data();
         public Text_Editor()
         {
             InitializeComponent();
@@ -39,31 +41,33 @@ namespace cceditior
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            CheckBox checkBox = new CheckBox();
-            Label label = new Label();
 
+            
+            System.Windows.Controls.CheckBox checkBox = new System.Windows.Controls.CheckBox();
+            System.Windows.Controls.Label label = new System.Windows.Controls.Label();
+            string InputPath="null";
             ItemReader itemreader = new ItemReader();
-            ItemList mylist= itemreader.Load("Item.xml");
-            foreach (Item item in mylist.items)
+            using (OpenFileDialog dialog = new OpenFileDialog())
             {
-                switch (item.Name.ToString())
+                if (System.Windows.Forms.DialogResult.OK == dialog.ShowDialog())
                 {
-                    case "Name":
+                   InputPath = /*System.IO.Path.GetDirectoryName(*/dialog.FileName/*)*/;
 
-                        break;
-                    case "UnlockRequirement":
-
-                        break;
-                    case "Description":
-
-                        break;
-                    case "Effect":
-                        break;
                 }
+            }
+            ItemList mylist= itemreader.Load(InputPath);
+            foreach (Item item in mylist.Items)
+            {
 
-                label.Content = item.Description;
 
-                Data dataWindow = Application.Current.MainWindow as Data;
+                        checkBox.Content = item.Name.ToString();
+                        label.Content = item.UnlockRequirement.ToString();
+                        label.Content = item.Description.ToString();
+
+
+
+                Thickness margin = dataWindow.ItemNameStackPanel.Margin;
+                margin.Top = 10;
                 dataWindow.ItemNameStackPanel.Children.Add(checkBox);
                 dataWindow.ItemDataStackPanel.Children.Add(label);
                 //Todo:ADD THE ITEM to somewhere
