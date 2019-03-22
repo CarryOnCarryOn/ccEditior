@@ -50,7 +50,7 @@ namespace cceditior
             joinBitmap = SmallPic(joinBitmap, sourceBitmap.Width/2, sourceBitmap.Height/2);
             Bitmap TempsourceBitmap = sourceBitmap;
             Graphics gr = Graphics.FromImage(TempsourceBitmap);
-            gr.DrawImage(joinBitmap, 10, 10, new RectangleF(rc.Left/2, rc.Top/2, (rc.Right - rc.Left)/2, (rc.Bottom - rc.Top)/2), GraphicsUnit.Pixel);
+            gr.DrawImage(joinBitmap, 50, 10, new RectangleF(rc.Left/2, rc.Top/2, (rc.Right - rc.Left)/2, (rc.Bottom - rc.Top)/2), GraphicsUnit.Pixel);
             gr.Dispose();
             return TempsourceBitmap;
         }

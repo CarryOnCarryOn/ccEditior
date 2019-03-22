@@ -35,7 +35,7 @@ namespace cceditior
 
             if (SourceDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                inputpath.Text = SourceDialog.SelectedPath;
+                inputpath.Text = SourceDialog.SelectedPath+ "\\" + "savedImage" + ".png";
             }
             myfpage.characterimage.Source= (new ImageSourceConverter()).ConvertFromString(inputpath.Text) as ImageSource;
 
@@ -67,5 +67,7 @@ namespace cceditior
             myfpage.Show();
             this.Close();
         }
+
+
     }
 }
