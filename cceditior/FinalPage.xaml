@@ -17,10 +17,10 @@
             <RowDefinition Height="146*"/>
             <RowDefinition Height="184*"/>
         </Grid.RowDefinitions>
-        <Image x:Name="characterimage" HorizontalAlignment="Left" Height="177" Margin="77,25,0,0" VerticalAlignment="Top" Width="183" Grid.RowSpan="2"/>
+        <Image x:Name="characterimage" HorizontalAlignment="Left" Height="177" Margin="77,25,0,0" VerticalAlignment="Top" Width="183" Grid.RowSpan="2" Stretch="Fill"/>
         <TextBox x:Name="Information" HorizontalAlignment="Left" Height="156" Margin="35,0,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="289"/>
         <StackPanel  x:Name="namepanel" Grid.Column="1" HorizontalAlignment="Left" Height="292" Margin="64,10,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="204" Grid.Row="1"/>
-        <Label Content="Item Name" Grid.Column="1" HorizontalAlignment="Left" Margin="135,25,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.288,1.054" Width="97" Height="26"/>
+        <Label Content="Inventory" Grid.Column="1" HorizontalAlignment="Left" Margin="135,25,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.288,1.054" Width="97" Height="26"/>
         <Button Content="Save" Grid.Column="1" HorizontalAlignment="Left" Margin="314,118,0,0" Grid.Row="2" VerticalAlignment="Top" Width="75" Click="Button_Click">
             <Button.Background>
                 <ImageBrush ImageSource="images/Button_Background_1.png"/>

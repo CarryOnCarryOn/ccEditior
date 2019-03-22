@@ -8,6 +8,7 @@
         Title="Image_Window" Height="450" Width="800">
     <StackPanel x:Name="DisplayWindow" HorizontalAlignment="Left" Height="421" VerticalAlignment="Top" Width="780" Margin="10,0,0,-2">
         <Image x:Name="imageShowing" Height="384" Stretch="Fill"/>
+        <Button Content="save" Margin="0,0,717,0" Click="Button_Click_1"/>
         <Button Content="Next" Margin="385,0,290,0" RenderTransformOrigin="0.486,0.567" Click="Button_Click">
             <Button.Background>
                 <ImageBrush ImageSource="images/Button_Background_1.png"/>

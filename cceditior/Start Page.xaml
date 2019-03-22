@@ -17,11 +17,7 @@
                 <ImageBrush ImageSource="images/Button_Background_1.png"/>
             </Button.Background>
         </Button>
-        <Button Content="Output" HorizontalAlignment="Left" Margin="168,271,0,0" VerticalAlignment="Top" Width="130" Height="60">
-            <Button.Background>
-                <ImageBrush ImageSource="images/Button_Background_1.png"/>
-            </Button.Background>
-        </Button>
+        <Image x:Name="FinalPage" HorizontalAlignment="Left" Height="409" Margin="10,0,0,0" VerticalAlignment="Top" Width="472" Stretch="Fill"/>
 
     </Grid>
 </Window>

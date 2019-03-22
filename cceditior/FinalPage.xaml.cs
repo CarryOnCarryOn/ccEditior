@@ -31,7 +31,7 @@ namespace cceditior
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            util.SaveWindow(this, 96, "C:/Users/1820201/Desktop/window.png");
+            util.SaveWindow(this, 96, "window.png");
             this.Close();
         }
 

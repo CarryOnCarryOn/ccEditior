@@ -18,7 +18,7 @@ using Label = System.Windows.Controls.Label;
 namespace cceditior
 {
     /// <summary>
-    /// Text_Editor.xaml 的交互逻辑
+    /// Text_Editor.xaml 
     /// </summary>
     public partial class Text_Editor : Window
     {
@@ -36,7 +36,7 @@ namespace cceditior
             backToMode.Show();
             this.Close();
         }
-
+        //Save and show edited page
         public void Save_Click(object sender, RoutedEventArgs e)
         { 
             sdn.ChangeTitleName(nameOftitle.Text);

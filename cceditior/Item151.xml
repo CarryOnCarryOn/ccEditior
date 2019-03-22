@@ -8,9 +8,9 @@
   <Effect>none</Effect>
   </Item>
   <Item>
-  <Name>big</Name>
+  <Name>knife</Name>
   <UnlockRequirement>1</UnlockRequirement>
-  <Description>Ironsword</Description>
+  <Description>metalKnife</Description>
   <Effect>none</Effect>
   </Item>
 </Items>
