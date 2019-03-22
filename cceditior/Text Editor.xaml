@@ -6,14 +6,26 @@
         xmlns:local="clr-namespace:cceditior"
         mc:Ignorable="d"
         Title="Text_Editor" Height="500" Width="450">
-    <Grid>
+    <Grid Background="#FFD3A50B">
        
-        <Button x:Name="Previous" Content="Previous" HorizontalAlignment="Left" Margin="52,418,0,0" VerticalAlignment="Top" Width="75" Click="Previous_Click"/>
+        <Button x:Name="Previous" Content="Previous" HorizontalAlignment="Left" Margin="52,418,0,0" VerticalAlignment="Top" Width="75" Click="Previous_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="images/Button_Background_1.png"/>
+            </Button.Background>
+        </Button>
         <Label Content="Text Editor" HorizontalAlignment="Left" Margin="160,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
-        <Button Content="Import" HorizontalAlignment="Left" Margin="52,82,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="Import" HorizontalAlignment="Left" Margin="52,82,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="images/Button_Background_1.png"/>
+            </Button.Background>
+        </Button>
         <Label Content="Title Name :" HorizontalAlignment="Left" Margin="52,135,0,0" VerticalAlignment="Top" RenderTransformOrigin="-5.6,-1.2"/>
         <TextBox x:Name="nameOftitle" HorizontalAlignment="Left" Height="23" Margin="160,137,0,0" TextWrapping="Wrap" Text="enter title name" VerticalAlignment="Top" Width="120"/>
-        <Button Content="save" HorizontalAlignment="Left" Margin="325,141,0,0" VerticalAlignment="Top" Width="75" Click="Save_Click"/>
+        <Button Content="save" HorizontalAlignment="Left" Margin="325,141,0,0" VerticalAlignment="Top" Width="75" Click="Save_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="images/Button_Background_1.png"/>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Window>

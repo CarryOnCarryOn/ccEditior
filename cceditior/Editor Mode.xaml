@@ -6,10 +6,7 @@
         xmlns:local="clr-namespace:cceditior"
         mc:Ignorable="d"
         Title="Editor_Mode" Height="269.627" Width="418.802">
-    <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="images/Surface_Background_1.jpg"/>
-        </Grid.Background>
+    <Grid Background="#FFD3A50B">
         <Label Content="Choose Editor Mode" HorizontalAlignment="Left" Margin="130,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
 
         <RadioButton x:Name="TextMode" Content="Text Editor Mode" HorizontalAlignment="Left" Margin="35,59,0,0" VerticalAlignment="Top" Checked="TextMode_RadioButton_Checked" FontWeight="Bold"/>

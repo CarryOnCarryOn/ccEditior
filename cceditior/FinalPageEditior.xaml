@@ -6,10 +6,7 @@
         xmlns:local="clr-namespace:cceditior"
         mc:Ignorable="d"
         Title="FinalPageEditior" Height="450" Width="800">
-    <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="images/Surface_Background_1.jpg"/>
-        </Grid.Background>
+    <Grid Background="#FFD3A50B">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="46*"/>
             <ColumnDefinition Width="113*"/>

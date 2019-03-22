@@ -164,5 +164,8 @@
     <Resource Include="images\Button_Background_1.png" />
     <Resource Include="images\Surface_Background_1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Background.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

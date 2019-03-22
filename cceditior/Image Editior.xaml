@@ -6,10 +6,7 @@
         xmlns:local="clr-namespace:cceditior"
         mc:Ignorable="d"
         Title="Image_Editior" Height="450" Width="800">
-    <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="images/Surface_Background_1.jpg"/>
-        </Grid.Background>
+    <Grid Background="#FFD3A50B">
         <Grid.RowDefinitions>
             <RowDefinition Height="158*"/>
             <RowDefinition Height="261*"/>
@@ -53,7 +50,11 @@
                 <ImageBrush ImageSource="images/Button_Background_1.png"/>
             </Button.Background>
         </Button>
-        <Button Content="Save" Grid.Column="1" HorizontalAlignment="Left" Margin="447,219,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.331,0.475" Click="Save"/>
+        <Button Content="Save" Grid.Column="1" HorizontalAlignment="Left" Margin="447,219,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.331,0.475" Click="Save">
+            <Button.Background>
+                <ImageBrush ImageSource="images/Button_Background_1.png"/>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Window>
