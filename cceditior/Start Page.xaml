@@ -7,9 +7,24 @@
         mc:Ignorable="d"
         Title="Start Page" Height="450" Width="500">
     <Grid>
-        <Button Content="Improt" HorizontalAlignment="Left" Margin="168,64,0,0" VerticalAlignment="Top" Width="130" Height="60" Click="Button_Click"/>
-        <Button Content="New" HorizontalAlignment="Left" Margin="168,165,0,0" VerticalAlignment="Top" Width="130" Click="New_Button_Click" Height="60"/>
-        <Button Content="Output" HorizontalAlignment="Left" Margin="168,271,0,0" VerticalAlignment="Top" Width="130" Height="60"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="images/Surface_Background_1.jpg"/>
+        </Grid.Background>
+        <Button Content="Improt" HorizontalAlignment="Left" Margin="168,64,0,0" VerticalAlignment="Top" Width="130" Height="60" Click="Button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="images/Button_Background_1.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="New" HorizontalAlignment="Left" Margin="168,165,0,0" VerticalAlignment="Top" Width="130" Click="New_Button_Click" Height="60">
+            <Button.Background>
+                <ImageBrush ImageSource="images/Button_Background_1.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Output" HorizontalAlignment="Left" Margin="168,271,0,0" VerticalAlignment="Top" Width="130" Height="60">
+            <Button.Background>
+                <ImageBrush ImageSource="images/Button_Background_1.png"/>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Window>

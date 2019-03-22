@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="Editor_Mode" Height="269.627" Width="418.802">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="images/Surface_Background_1.jpg"/>
+        </Grid.Background>
         <Label Content="Choose Editor Mode" HorizontalAlignment="Left" Margin="130,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
 
         <RadioButton x:Name="TextMode" Content="Text Editor Mode" HorizontalAlignment="Left" Margin="35,59,0,0" VerticalAlignment="Top" Checked="TextMode_RadioButton_Checked" FontWeight="Bold"/>
@@ -14,10 +17,22 @@
 
         <Label x:Name="Tips" Content="Tips:&#10;&#10;Text Editor Mode can add item data and editing&#10; information that you want to use for character.&#10;&#10;Image Editor Mode can import image to edit&#10; appearance of Character." HorizontalAlignment="Left" Margin="43,73,0,0" VerticalAlignment="Top" Height="125" Width="315"/>
 
-        <Button x:Name="TextEditor" Content="Text Editor" HorizontalAlignment="Left" Margin="35,105,0,0" VerticalAlignment="Top" Width="160" Height="50" Click="TextEditor_Click" Visibility="Collapsed"/>
-        <Button x:Name="AddCharacterImage" Content="Add Character Image" HorizontalAlignment="Left" Margin="198,105,0,0" VerticalAlignment="Top" Width="160" Height="50" Visibility="Collapsed" Click="AddCharacterImage_Click"/>
-        
-        <Button x:Name="ShowTips" Content="Show Tips" HorizontalAlignment="Left" Margin="43,198,0,0" VerticalAlignment="Top" Width="75" Click="ShowTips_Click"/>
+        <Button x:Name="TextEditor" Content="Text Editor" HorizontalAlignment="Left" Margin="35,105,0,0" VerticalAlignment="Top" Width="160" Height="50" Click="TextEditor_Click" Visibility="Collapsed">
+            <Button.Background>
+                <ImageBrush ImageSource="images/Button_Background_1.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="ImageEditor" Content="ImageEditor" HorizontalAlignment="Left" Margin="198,105,0,0" VerticalAlignment="Top" Width="160" Height="50" Visibility="Collapsed" Click="ImageEditor_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="images/Button_Background_1.png"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="ShowTips" Content="Show Tips" HorizontalAlignment="Left" Margin="43,198,0,0" VerticalAlignment="Top" Width="75" Click="ShowTips_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="images/Button_Background_1.png"/>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Window>

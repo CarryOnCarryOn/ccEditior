@@ -34,13 +34,6 @@ namespace cceditior
             this.Close();
         }
 
-        private void PreviousButton_Click(object sender, RoutedEventArgs e)
-        {
-            MainWindow backToStart = new MainWindow();
-            backToStart.Show();
-            this.Close();
-        }
-
         public void ChangeTitleName(string name)
         {
             TitleName.Content = name;
@@ -52,6 +45,14 @@ namespace cceditior
             Data openData = new Data();
             openData.Show();
             this.Close();
+        }
+
+        private void OpenFinalPage(object sender, RoutedEventArgs e)
+        {
+
+                FinalPageEditior finalPageEditior = new FinalPageEditior();
+                finalPageEditior.Show();
+                this.Close();
         }
     }
 }

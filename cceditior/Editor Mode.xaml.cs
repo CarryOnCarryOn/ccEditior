@@ -29,7 +29,7 @@ namespace cceditior
             //show button
             TextEditor.Visibility = Visibility.Visible;
             //collapse buttons
-            AddCharacterImage.Visibility = Visibility.Collapsed;
+            ImageEditor.Visibility = Visibility.Collapsed;
         
             Tips.Visibility = Visibility.Collapsed;
         }
@@ -37,7 +37,7 @@ namespace cceditior
         private void ImageMode_RadioButton_Checked(object sender, RoutedEventArgs e)
         {
             //show button
-            AddCharacterImage.Visibility = Visibility.Visible;
+            ImageEditor.Visibility = Visibility.Visible;
            
             //collapse buttons
             TextEditor.Visibility = Visibility.Collapsed;
@@ -53,7 +53,7 @@ namespace cceditior
             ImageMode.IsChecked = false;
             //collapse buttons
             TextEditor.Visibility = Visibility.Collapsed;
-            AddCharacterImage.Visibility = Visibility.Collapsed;
+            ImageEditor.Visibility = Visibility.Collapsed;
             
         }
 
@@ -65,9 +65,13 @@ namespace cceditior
             this.Close();
         }
 
-        private void AddCharacterImage_Click(object sender, RoutedEventArgs e)
+        private void ImageEditor_Click(object sender, RoutedEventArgs e)
         {
-
+            Image_Editior openImageEditor = new Image_Editior();
+            openImageEditor.Show();
+            this.Close();
         }
+
+
     }
 }

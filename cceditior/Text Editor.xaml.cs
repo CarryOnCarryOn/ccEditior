@@ -12,6 +12,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using CheckBox = System.Windows.Controls.CheckBox;
+using Label = System.Windows.Controls.Label;
 
 namespace cceditior
 {
@@ -20,6 +22,8 @@ namespace cceditior
     /// </summary>
     public partial class Text_Editor : Window
     {
+        public static List<CheckBox> mybox = new List<CheckBox>();
+        public static List<Label> mylabel = new List<Label>();
         Data sdn = new Data();
         public Text_Editor()
         {
@@ -42,10 +46,6 @@ namespace cceditior
 
         public void Button_Click(object sender, RoutedEventArgs e)
         {
-
-            
-            System.Windows.Controls.CheckBox checkBox = new System.Windows.Controls.CheckBox();
-            System.Windows.Controls.Label label = new System.Windows.Controls.Label();
             string InputPath="null";
             ItemReader itemreader = new ItemReader();
             using (OpenFileDialog dialog = new OpenFileDialog())
@@ -59,19 +59,18 @@ namespace cceditior
             ItemList mylist= itemreader.Load(InputPath);
             foreach (Item item in mylist.Items)
             {
+                System.Windows.Controls.CheckBox checkBox = new System.Windows.Controls.CheckBox();
+                System.Windows.Controls.Label label = new System.Windows.Controls.Label();
 
-
-                        checkBox.Content = item.Name.ToString();
-                        label.Content = item.UnlockRequirement.ToString();
-                        label.Content = item.Description.ToString();
-
-
-
-                Thickness margin = sdn.ItemNameStackPanel.Margin;
-                margin.Top = 10;
-                sdn.ItemNameStackPanel.Children.Add(checkBox);
-                sdn.ItemDataStackPanel.Children.Add(label);
-                //Todo:ADD THE ITEM to somewhere
+                checkBox.Content = item.Name.ToString();
+               label.Content = item.UnlockRequirement.ToString();
+               label.Content = item.Description.ToString();
+               sdn.ItemNameStackPanel.Margin = new Thickness(0, 0, 0, 0);
+               sdn.ItemDataStackPanel.Margin = new Thickness(0, 0, 0, 0);
+               sdn.ItemNameStackPanel.Children.Add(checkBox);
+               sdn.ItemDataStackPanel.Children.Add(label);
+               mybox.Add(checkBox);
+               //mylabel.Add(label);
             }
         }
     }

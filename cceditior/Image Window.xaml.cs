@@ -17,11 +17,18 @@ namespace cceditior
     /// <summary>
     /// Interaction logic for Image_Editor.xaml
     /// </summary>
-    public partial class Image_Editor : Window
+    public partial class Image_Window : Window
     {
-        public Image_Editor()
+        public Image_Window()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Editor_Mode openEditorMode = new Editor_Mode();
+            openEditorMode.Show();
+            this.Close();
         }
     }
 }

@@ -37,6 +37,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -56,9 +58,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CheckBoxList.cs" />
     <Compile Include="DataList.cs" />
-    <Compile Include="Image Editor.xaml.cs">
-      <DependentUpon>Image Editor.xaml</DependentUpon>
+    <Compile Include="FinalPage.xaml.cs">
+      <DependentUpon>FinalPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FinalPageEditior.xaml.cs">
+      <DependentUpon>FinalPageEditior.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Image Editior.xaml.cs">
+      <DependentUpon>Image Editior.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Image Window.xaml.cs">
+      <DependentUpon>Image Window.xaml</DependentUpon>
     </Compile>
     <Compile Include="Item.cs" />
     <Compile Include="ItemList.cs" />
@@ -74,7 +86,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Image Editor.xaml">
+    <Page Include="FinalPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FinalPageEditior.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Image Editior.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Image Window.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -132,6 +156,13 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\test2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Item151.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Button_Background_1.png" />
+    <Resource Include="images\Surface_Background_1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

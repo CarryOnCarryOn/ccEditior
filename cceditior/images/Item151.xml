@@ -8,10 +8,10 @@
   <Effect>none</Effect>
   </Item>
   <Item>
-  <Name>big</Name>
-  <UnlockRequirement>1</UnlockRequirement>
-  <Description>Ironsword</Description>
-  <Effect>none</Effect>
+    <Name>big</Name>
+    <UnlockRequirement>1</UnlockRequirement>
+    <Description>Ironsword</Description>
+    <Effect>none</Effect>
   </Item>
 </Items>
 </ItemList>

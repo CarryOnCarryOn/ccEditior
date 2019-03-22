@@ -1,0 +1,44 @@
+﻿<Window x:Class="cceditior.FinalPageEditior"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:cceditior"
+        mc:Ignorable="d"
+        Title="FinalPageEditior" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="images/Surface_Background_1.jpg"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="46*"/>
+            <ColumnDefinition Width="113*"/>
+            <ColumnDefinition Width="39*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="119*"/>
+            <RowDefinition Height="133*"/>
+            <RowDefinition Height="167*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Pick character image" HorizontalAlignment="Left" Margin="26,55,0,0" VerticalAlignment="Top" Width="117"/>
+        <TextBox x:Name="inputpath" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="32,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="284"/>
+        <Button Content="Browse..." Grid.Column="2" HorizontalAlignment="Left" Margin="41,66,0,0" VerticalAlignment="Top" Width="75" Click="Showinput">
+            <Button.Background>
+                <ImageBrush ImageSource="images/Button_Background_1.png"/>
+            </Button.Background>
+        </Button>
+        <Label Content="Write Background info" HorizontalAlignment="Left" Margin="10,65,0,0" Grid.Row="1" VerticalAlignment="Top" Width="133"/>
+        <TextBox x:Name="bginfo" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="32,68,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="370"/>
+        <Button Content="Save" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Grid.Column="2" Margin="41,71,0,0" Grid.Row="1" Click="save">
+            <Button.Background>
+                <ImageBrush ImageSource="images/Button_Background_1.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Done" Grid.Column="2" HorizontalAlignment="Left" Margin="41,82,0,0" Grid.Row="2" VerticalAlignment="Top" Width="75" Click="Done">
+            <Button.Background>
+                <ImageBrush ImageSource="images/Button_Background_1.png"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>
